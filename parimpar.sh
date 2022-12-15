@@ -1,8 +1,9 @@
 #!/bin/bash
-echo -p "Introduce un numero entero:" num
+echo -n "Introduce un numero entero:"
+read num
 
-if [[  ]]; then
-	
+if ((num % 2 == 0)); then
+	echo "El numero es par"
    else
-	
+	echo "El numero es impar"
    fi
